@@ -1,11 +1,45 @@
 /*====== CSS Variables ======*/
+
 :root {
   --red: #f00;
+  --blue: blue;
+  --green: green;
+  --yellow: yellow;
 }
 
-/*====== Moblie and tablet Rules ======*/
-@media (max-width: 676px) {
+/* ====== Start Media Queries(Add a Breakpoint) ======*/
+
+/*====== Small Screen Rules (If the screen size is 677px or smaller ) ======*/
+
+@media (max-width: 677px) {
   p {
-    color: var(--red);
+    background-color: var(--green);
   }
 }
+
+/*======  Moblie and tablet Rules (If the screen size is  678px or larger ) ======*/
+
+@media (min-width: 678px) {
+  p {
+    background-color: var(--red);
+  }
+}
+
+/*======  Medium Screen Rules (If the screen size is  992px or larger ) ======*/
+
+@media (min-width: 992px) {
+  p {
+    color: var(--red);
+    background-color: var(--yellow);
+  }
+}
+
+/*======  Large Screen Rules (If the screen size is  1200px or larger ) ======*/
+
+@media (min-width: 1200px) {
+  p {
+    background-color: var(--blue);
+  }
+}
+
+/* ====== End Media Queries ======*/
