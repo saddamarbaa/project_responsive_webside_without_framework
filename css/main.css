@@ -1,0 +1,11 @@
+/*====== CSS Variables ======*/
+:root {
+  --red: #f00;
+}
+
+/*====== Moblie and tablet Rules ======*/
+@media (max-width: 676px) {
+  p {
+    color: var(--red);
+  }
+}
