@@ -22,8 +22,9 @@ body {
 
 .header {
   background: url("/images/header1.jpg") no-repeat top center/cover;
-  background: url("/images/pexels-photo.webp") no-repeat top center/cover;
-  min-height: 400px;
+  background: url("/images/pexels-photo-5926400.webp") no-repeat top
+    center/cover;
+  min-height: 500px;
   position: relative;
 }
 
@@ -38,7 +39,7 @@ body {
 }
 
 .header .overlay h1 {
-  font-size: 60px;
+  font-size: 45px;
   margin-top: 30px;
 }
 
@@ -59,7 +60,8 @@ body {
 }
 
 /* Header Media Queries */
-/* Small Screen Rules (If the screen size is 677px or smaller ) */
+
+/* Small Screen Rules  */
 
 @media (max-width: 767px) {
   .header .overlay .plan {
@@ -87,9 +89,9 @@ body {
 }
 
 .features .featBox {
-  width: 33.333%;
   color: var(--grey);
   padding: 0 20px 0 0;
+  margin-bottom: 30px;
 }
 
 .features .featBox h2 {
@@ -101,7 +103,33 @@ body {
   margin: 0;
 }
 
-/* ====== Start features Section ======*/
+/* Features Media Queries */
+
+/* Small Screen Rules  */
+
+@media (max-width: 767px) {
+  .features .featBox {
+    text-align: center;
+  }
+}
+
+/*  Mobile and tablet Rules */
+
+@media (min-width: 768px) {
+  .features .featBox {
+    width: 50%;
+  }
+}
+
+/* Medium Screen Rules */
+
+@media (min-width: 992px) {
+  .features .featBox {
+    width: 33.333%;
+  }
+}
+
+/* ====== End features Section ======*/
 
 /* ====== Start Media Queries(Add a Breakpoint) ======*/
 
