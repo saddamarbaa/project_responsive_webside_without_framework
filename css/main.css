@@ -1,3 +1,10 @@
+/* ==========================================
+   main.css
+   These are the final styles for the project.
+   Author:   Saddam Arbaa
+   Website:  TODO
+			========================================== */
+
 /* ====== Start Global Rules ======*/
 
 * {
@@ -25,7 +32,7 @@ body {
 /* ====== Start Header ======*/
 
 .header {
-  background: url("/images/header1.jpg") no-repeat top center/cover;
+  /* background: url("/images/header1.jpg") no-repeat top center/cover; */
   background: url("/images/pexels-photo-5926400.webp") no-repeat top
     center/cover;
   min-height: 500px;
@@ -205,9 +212,9 @@ body {
 }
 
 .pricing-plan-table .pricing-plan {
-  width: 33.33333333333333%;
   padding: 20px 0;
   border: 2px solid var(--white);
+  position: relative;
 }
 
 .pricing-plan-table .pricing-plan h3 {
@@ -224,9 +231,72 @@ body {
   font-size: 18px;
 }
 
+/* Our Pricing Plan Media Queries */
+
+/* Small Screen Rules  */
+
+@media (max-width: 767px) {
+  .pricing-plan-table .pricing-plan {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+
+  .pricing-plan-table .pricing-plan.plus {
+    top: 671px; /* moved to bottom */
+  }
+
+  .pricing-plan-table .pricing-plan.umtimate {
+    bottom: 335.5px; /* moved to top */
+  }
+
+  .pricing-plan-table .pricing-plan.premium {
+    bottom: 335.5px; /* moved to top */
+  }
+}
+
+/*   Mobile and tablet   */
+
+@media (min-width: 768px) and (max-width: 991px) {
+  .pricing-plan-table .pricing-plan {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+  .pricing-plan-table .pricing-plan {
+    width: 32.666666%;
+  }
+
+  .pricing-plan-table .pricing-plan.plus {
+    left: 33.666666%; /* moved to right */
+  }
+
+  .pricing-plan-table .pricing-plan.premium {
+    right: 33.666666%; /* moved to left */
+  }
+}
+
+/* Medium Screen Rules */
+
+@media (min-width: 992px) {
+  .pricing-plan-table .pricing-plan:not(.umtimate) {
+    margin-right: 1%;
+  }
+
+  .pricing-plan-table .pricing-plan {
+    width: 32.666666%;
+  }
+
+  .pricing-plan-table .pricing-plan.plus {
+    left: 33.666666%; /* moved to right */
+  }
+
+  .pricing-plan-table .pricing-plan.premium {
+    right: 33.666666%; /* moved to left */
+  }
+}
+
 /* ====== End Our Pricing Plan Section ======*/
 
-/* ====== Start Media Queries(Add a Breakpoint) ======*/
+/* ====== Start the General Media Queries(Add a Breakpoint) ======*/
 
 /*====== Small Screen Rules (If the screen size is 677px or smaller ) ======*/
 
@@ -264,6 +334,8 @@ body {
 /* ====== End Media Queries ======*/
 
 /* ====== Start My FrameWork ======*/
+
+/* here I created My own Framework for some repeated styles so I can used over and over again*/
 
 .container {
   margin: auto;
