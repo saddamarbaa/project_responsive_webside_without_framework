@@ -10,6 +10,7 @@
   --white: #fff;
   --grey: #555;
   --Grey2: #848484;
+  --Grey4: #444;
   --Whisper: #ececec;
 }
 
@@ -190,6 +191,41 @@ body {
 
 /* ====== End Our Work Section ======*/
 
+/* ====== Start Our Pricing Plan Section ======*/
+
+.pricing-plan-table {
+  background-color: var(--Grey4);
+  color: var(--white);
+  padding: 50px 0;
+}
+
+.pricing-plan-table .h1 {
+  margin: 0 0 40px;
+  font-size: 2rem;
+}
+
+.pricing-plan-table .pricing-plan {
+  width: 33.33333333333333%;
+  padding: 20px 0;
+  border: 2px solid var(--white);
+}
+
+.pricing-plan-table .pricing-plan h3 {
+  margin: 0 0 10px;
+  font-size: 1.5rem;
+}
+
+.pricing-plan-table .pricing-plan .pricing {
+  display: inline-block;
+}
+
+.pricing-plan-table .pricing-plan ul {
+  line-height: 1.9;
+  font-size: 18px;
+}
+
+/* ====== End Our Pricing Plan Section ======*/
+
 /* ====== Start Media Queries(Add a Breakpoint) ======*/
 
 /*====== Small Screen Rules (If the screen size is 677px or smaller ) ======*/
@@ -275,5 +311,12 @@ body {
 
 .responsive-image {
   width: 100%;
+  height: 300px;
+}
+
+.unstyle-list {
+  padding: 0;
+  margin: 0;
+  list-style: none;
 }
 /* ====== End My FrameWork ======*/
