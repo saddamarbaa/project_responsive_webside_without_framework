@@ -150,7 +150,45 @@ body {
   color: var(--Grey2);
 }
 
-/* ====== End Start About Us Section ======*/
+/* ====== End About Us Section ======*/
+
+/* ====== Start Our Work Section ======*/
+
+/*  Our Work Media Queries */
+
+/* Small Screen Rules  */
+
+@media (max-width: 767px) {
+  .our-work .image {
+    width: 100%;
+  }
+}
+
+/*  Mobile and tablet Rules */
+
+@media (min-width: 768px) {
+  .our-work .image {
+    width: 50%;
+  }
+}
+
+/* Medium Screen Rules */
+
+@media (min-width: 992px) {
+  .our-work .image {
+    width: 33.33%;
+  }
+}
+
+/*  Large Screen Rules */
+
+@media (min-width: 1200px) {
+  .our-work .image {
+    width: 25%;
+  }
+}
+
+/* ====== End Our Work Section ======*/
 
 /* ====== Start Media Queries(Add a Breakpoint) ======*/
 
@@ -233,5 +271,9 @@ body {
 .responsive-paragraph {
   line-height: 1.8;
   font-size: 1.2.1rem;
+}
+
+.responsive-image {
+  width: 100%;
 }
 /* ====== End My FrameWork ======*/
