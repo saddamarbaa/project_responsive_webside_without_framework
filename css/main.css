@@ -16,6 +16,8 @@
 :root {
   --white: #fff;
   --grey: #555;
+  --greyE: #eee;
+  --greyd: #ddd;
   --Grey2: #848484;
   --Grey4: #444;
   --Whisper: #ececec;
@@ -295,6 +297,36 @@ body {
 }
 
 /* ====== End Our Pricing Plan Section ======*/
+
+/* ====== Start Testimonials  Section ======*/
+
+.they-say {
+  padding: 40px;
+}
+
+.they-say .h1 {
+  font-size: 2rem;
+  margin: 0 0 0 20px;
+  color: var(--grey);
+}
+
+.they-say .person-say {
+  background-color: var(--greyE);
+  border: 1px solid var(--greyd);
+  padding: 20px;
+  margin: 0 0 20px;
+}
+
+.they-say .person-say:first-of-type {
+  width: 80%;
+  margin-left: 10%;
+}
+
+.they-say .person-say:not(:first-of-type) {
+  width: 50%;
+}
+
+/* ====== End Testimonials  Section ======*/
 
 /* ====== Start the General Media Queries(Add a Breakpoint) ======*/
 
