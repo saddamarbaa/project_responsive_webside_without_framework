@@ -9,11 +9,14 @@
 :root {
   --white: #fff;
   --grey: #555;
+  --Grey2: #848484;
+  --Whisper: #ececec;
 }
 
 body {
   font-family: "Montserrat", sans-serif;
   line-height: 1.5;
+  height: 3000px; /* for testing will be remove */
 }
 
 /* ====== End Global Rules ======*/
@@ -131,17 +134,39 @@ body {
 
 /* ====== End features Section ======*/
 
+/* ====== Start About Us Section ======*/
+
+.about-us {
+  background-color: var(--Whisper);
+  padding: 15px 0 30px 0;
+}
+
+.about-us .h1 {
+  font-size: 45;
+  color: var(--Grey2);
+}
+
+.about-us .responsive-paragraph {
+  color: var(--Grey2);
+}
+
+/* ====== End Start About Us Section ======*/
+
 /* ====== Start Media Queries(Add a Breakpoint) ======*/
 
 /*====== Small Screen Rules (If the screen size is 677px or smaller ) ======*/
 
 @media (max-width: 767px) {
+  .responsive-paragraph {
+    text-align: center;
+    font-size: 1.1rem;
+  }
 }
 
 /*======  Mobile and tablet Rules (If the screen size is  678px or larger ) ======*/
 
 @media (min-width: 768px) and (max-width: 991px) {
-  .conatiner {
+  .container {
     width: 750px;
   }
 }
@@ -149,7 +174,7 @@ body {
 /*======  Medium Screen Rules (If the screen size is  992px or larger ) ======*/
 
 @media (min-width: 992px) and (max-width: 1199px) {
-  .conatiner {
+  .container {
     width: 970px;
   }
 }
@@ -157,7 +182,7 @@ body {
 /*======  Large Screen Rules (If the screen size is 1200px or larger ) ======*/
 
 @media (min-width: 1200px) {
-  .conatiner {
+  .container {
     width: 1170px;
   }
 }
@@ -166,7 +191,7 @@ body {
 
 /* ====== Start My FrameWork ======*/
 
-.conatiner {
+.container {
   margin: auto;
   padding-left: 15px;
   padding-right: 15px;
@@ -203,5 +228,10 @@ body {
 
 .h2 {
   font-size: 1.5em;
+}
+
+.responsive-paragraph {
+  line-height: 1.8;
+  font-size: 1.2.1rem;
 }
 /* ====== End My FrameWork ======*/
