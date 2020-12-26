@@ -8,18 +8,21 @@
 
 :root {
   --white: #fff;
+  --grey: #555;
 }
 
 body {
-  font-size: 1.2rem;
-  line-height: 1.4;
+  font-family: "Montserrat", sans-serif;
+  line-height: 1.5;
 }
+
 /* ====== End Global Rules ======*/
 
 /* ====== Start Header ======*/
 
 .header {
   background: url("/images/header1.jpg") no-repeat top center/cover;
+  background: url("/images/pexels-photo.webp") no-repeat top center/cover;
   min-height: 400px;
   position: relative;
 }
@@ -73,12 +76,31 @@ body {
 
 /* ====== Start features Section ======*/
 
-.features .featBox {
-  width: 31%;
-  border: 1px solid;
-  margin: 1%;
-  padding: 1%;
+.features {
+  padding: 30px 0;
 }
+
+.features .h1 {
+  font-size: 50px;
+  color: var(--grey);
+  margin-bottom: 10px;
+}
+
+.features .featBox {
+  width: 33.333%;
+  color: var(--grey);
+  padding: 0 20px 0 0;
+}
+
+.features .featBox h2 {
+  margin: 5px 0 5px;
+}
+
+.features .featBox p {
+  line-height: 1.6;
+  margin: 0;
+}
+
 /* ====== Start features Section ======*/
 
 /* ====== Start Media Queries(Add a Breakpoint) ======*/
@@ -145,5 +167,13 @@ body {
 
 .float-right {
   float: right;
+}
+
+.h1 {
+  font-size: 2em;
+}
+
+.h2 {
+  font-size: 1.5em;
 }
 /* ====== End My FrameWork ======*/
