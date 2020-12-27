@@ -466,6 +466,16 @@ body {
   border: 1px solid;
 }
 
+/* Imformation Section Media Queries */
+
+/* Small Screen Rules  */
+
+@media (max-width: 767px) {
+  .information ul.info-list li {
+    display: block;
+  }
+}
+
 /* ====== End Proudct Imformation  Section ======*/
 
 /* ====== Start the General Media Queries(Add a Breakpoint) ======*/
