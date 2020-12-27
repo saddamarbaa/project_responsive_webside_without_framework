@@ -315,6 +315,26 @@ body {
   border: 1px solid var(--greyd);
   padding: 20px;
   margin: 0 0 20px;
+  border-radius: 10px;
+}
+
+.they-say .person-say h3 {
+  margin: 20px 0 10px;
+}
+
+.they-say .person-say .avterImage {
+  width: 120px;
+  margin-right: 20px;
+}
+
+.they-say .person-say .avterImage img {
+  height: 160px;
+}
+
+.they-say .person-say p {
+  margin: 0;
+  line-height: 1.4;
+  width: calc(100% - 140px) !important;
 }
 
 /* Testimonials Media Queries */
@@ -341,15 +361,6 @@ body {
   .they-say .person-say:first-of-type {
     width: 80%;
     margin-left: 10%;
-  }
-
-  .they-say .person-say h3 {
-    margin: 0 0 10px;
-  }
-  .they-say .person-say p {
-    margin: 0;
-    line-height: 1.2;
-    border-radius: 10px;
   }
 }
 
