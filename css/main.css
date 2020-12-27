@@ -407,7 +407,7 @@ body {
 
 /* ====== End Testimonials  Section ======*/
 
-/* ====== Start Proudct Imformation  Section ======*/
+/* ====== Start Our Proudct Imformation  Section ======*/
 
 .information {
   background-color: var(--Whisper);
@@ -575,4 +575,7 @@ body {
   border: 1px solid var(--Ggreyc);
 }
 
+.show-div {
+  display: block;
+}
 /* ====== End My FrameWork ======*/

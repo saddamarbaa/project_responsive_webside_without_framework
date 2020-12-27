@@ -246,26 +246,42 @@
     <div class="container">
       <h2 class="h1 text-center">Our Web Services Information</h2>
       <ul class="classic-list  info-list">
-        <li class="active"> <a href=""> HTML/CSS</a></li>
-        <li> <a href="#">Vanilla JS</a> </li>
-        <li> <a href="#">React JS </a></li>
-        <li> <a href="#">React Nativ</a></li>
-        <li><a href="#">Node JS </a></li>
+        <ul class="classic-list  info-list">
+          <li class="active">
+            <a onclick="alignText('webDep' ,'about-html-css')">HTML/CSS</a>
+          </li>
+          <li>
+            <a onclick="alignText('webDep' ,'about-vanla-js' )">Vanilla JS </a>
+          </li>
+          <li>
+            <a onclick="alignText('webDep' ,'about-react-js' )">React JS</a>
+          </li>
+          <li>
+            <a onclick="alignText('webDep' ,'about-react-nativ' )">React Nativ </a>
+          </li>
+          <li>
+            <a onclick="alignText('webDep' ,'about-node-js' )">Node JS </a>
+          </li>
+        </ul>
       </ul>
       <div class="info-content">
-        <div class="about-html-css">
+        <div class="about-html-css webDep" id="about-html-css">
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus reiciendis non, quos at omnis
           et error ex itaque facilis esse optio magnam laborum expedita voluptate saepe, nemo quam corrupti. Quae.
         </div>
-        <div class="about-vanla-js">
+        <div class="about-vanla-js webDep show-div" id="about-vanla-js">
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus reiciendis non, quos at omnis
           et error ex itaque facilis esse optio magnam laborum expedita voluptate saepe, nemo quam corrupti. Quae.
         </div>
-        <div class="about-node-js">
+        <div class="about-node-js webDep" id="about-node-js">
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus reiciendis non, quos at omnis
           et error ex itaque facilis esse optio magnam laborum expedita voluptate saepe, nemo quam corrupti. Quae.
         </div>
-        <div class="about-react-js">
+        <div class="about-react-nativ webDep" id="about-react-nativ">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus reiciendis non, quos at omnis
+          et error ex itaque facilis esse optio magnam laborum expedita voluptate saepe, nemo quam corrupti. Quae.
+        </div>
+        <div class="about-react-js webDep" id="about-react-js">
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus reiciendis non, quos at omnis
           et error ex itaque facilis esse optio magnam laborum expedita voluptate saepe, nemo quam corrupti. Quae.
         </div>
