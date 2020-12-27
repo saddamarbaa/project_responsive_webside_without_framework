@@ -39,7 +39,6 @@ body {
 /* ====== Start Header ======*/
 
 .header {
-  /* background: url("/images/header1.jpg") no-repeat top center/cover; */
   background: url("/images/pexels-photo-5926400.webp") no-repeat top
     center/cover;
   min-height: 500px;
@@ -578,9 +577,11 @@ nav ul.topnav a:hover:not(.active) {
   padding: 20px;
   text-align: center;
 }
+
 /* Imformation Section Media Queries */
 
 /* Small Screen Rules  */
+
 @media (max-width: 767px) {
   .footer .copyright,
   .footer .design {
@@ -595,6 +596,7 @@ nav ul.topnav a:hover:not(.active) {
     width: 50%;
   }
 }
+
 /* ====== End Footer  Section ======*/
 
 /* ====== Start the General Media Queries(Add a Breakpoint) ======*/
