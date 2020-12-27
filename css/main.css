@@ -20,6 +20,7 @@
   --greyd: #ddd;
   --Grey2: #848484;
   --Grey4: #444;
+  --Ggreyc: #ccc;
   --Whisper: #ececec;
 }
 
@@ -339,6 +340,25 @@ body {
 
 /* Testimonials Media Queries */
 
+/* Small Screen Rules  */
+
+@media (max-width: 768px) {
+  .they-say .person-say .avterImage {
+    float: none;
+    margin: auto;
+  }
+
+  .they-say .person-say h3 {
+    float: none;
+    text-align: center;
+  }
+
+  .they-say .person-say p {
+    float: none;
+    width: 100% !important;
+  }
+}
+
 /* Mobile and tablet */
 
 @media (min-width: 768px) {
@@ -352,6 +372,23 @@ body {
 
   .they-say .person-say:last-of-type {
     margin-left: 2%;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+  .they-say .person-say:not(:first-of-type) .avterImage {
+    float: none;
+    margin: auto;
+  }
+
+  .they-say .person-say:not(:first-of-type) h3 {
+    float: none;
+    text-align: center;
+  }
+
+  .they-say .person-say:not(:first-of-type) p {
+    float: none;
+    width: 100% !important;
   }
 }
 
@@ -461,4 +498,16 @@ body {
   margin: 0;
   list-style: none;
 }
+
+.img-cirle {
+  border-radius: 50%;
+}
+
+.img-thumbnail {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  padding: 3px;
+  background-color: var(--white);
+  border: 1px solid var(--Ggreyc);
+}
+
 /* ====== End My FrameWork ======*/
