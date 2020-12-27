@@ -26,6 +26,7 @@
   --Grey4: #444;
   --Ggreyc: #ccc;
   --Whisper: #ececec;
+  --Snow: #dce1e5;
 }
 
 body {
@@ -459,11 +460,10 @@ body {
   background-color: #fff;
 }
 .information .info-content div:not(:first-child) {
+  padding: 20px;
   display: none;
-}
-
-.information .responsive-paragraph {
-  color: var(--Grey2);
+  background-color: var(--Snow);
+  border: 1px solid;
 }
 
 /* ====== End Proudct Imformation  Section ======*/
@@ -575,7 +575,4 @@ body {
   border: 1px solid var(--Ggreyc);
 }
 
-.show-div {
-  display: block;
-}
 /* ====== End My FrameWork ======*/
