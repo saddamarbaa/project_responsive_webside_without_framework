@@ -14,11 +14,15 @@
 /* CSS Variables */
 
 :root {
+  --green: #4caf50;
+  --red: #f00;
+  --black: #000;
   --white: #fff;
   --grey: #555;
   --greyE: #eee;
   --greyd: #ddd;
   --Grey2: #848484;
+  --Grey3: #333;
   --Grey4: #444;
   --Ggreyc: #ccc;
   --Whisper: #ececec;
@@ -27,7 +31,7 @@
 body {
   font-family: "Montserrat", sans-serif;
   line-height: 1.5;
-  height: 3000px; /* for testing will be remove */
+  height: 6000px; /* for testing will be remove */
 }
 
 /* ====== End Global Rules ======*/
@@ -402,6 +406,67 @@ body {
 }
 
 /* ====== End Testimonials  Section ======*/
+
+/* ====== Start Proudct Imformation  Section ======*/
+
+.information {
+  background-color: var(--Whisper);
+  padding: 15px 0 30px 0;
+  font-size: 1.2;
+}
+
+.information .h1 {
+  font-size: 45;
+  color: var(--black);
+}
+
+.information ul.info-list {
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: var(--Grey3);
+}
+
+.information ul.info-list li {
+  display: inline-block;
+}
+
+.information ul.info-list li.active {
+  background-color: var(--green);
+  cursor: pointer;
+}
+
+.information ul.info-list li a:hover:not(.active) {
+  background-color: var(--red);
+}
+
+.information ul.info-list li a {
+  display: block;
+  color: var(--greyE);
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+.information .info-content {
+  margin-bottom: 10px;
+  border-radius: 5px;
+}
+
+.information .info-content div:first-child {
+  padding: 20px;
+  background-color: var(--white);
+  background-color: #fff;
+}
+.information .info-content div:not(:first-child) {
+  display: none;
+}
+
+.information .responsive-paragraph {
+  color: var(--Grey2);
+}
+
+/* ====== End Proudct Imformation  Section ======*/
 
 /* ====== Start the General Media Queries(Add a Breakpoint) ======*/
 
