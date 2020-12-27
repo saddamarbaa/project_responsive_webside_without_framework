@@ -32,7 +32,6 @@
 body {
   font-family: "Montserrat", sans-serif;
   line-height: 1.5;
-  height: 6000px; /* for testing will be remove */
 }
 
 /* ====== End Global Rules ======*/
@@ -94,6 +93,45 @@ body {
 }
 
 /* ====== End Header ======*/
+
+/* ====== Start Top Navigation Bar ======*/
+nav {
+  background-color: var(--grey);
+}
+
+nav ul.topnav {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  overflow: auto;
+}
+
+nav ul.topnav li {
+  list-style: none;
+  display: inline-block;
+}
+
+nav ul.topnav li.active {
+  background-color: var(--green);
+  cursor: pointer;
+  color: white;
+}
+
+nav ul.topnav li a {
+  display: block;
+  color: #666;
+  text-align: center;
+  text-decoration: none;
+  color: #000;
+  color: var(--greyE);
+  padding: 14px 26px;
+}
+
+nav ul.topnav a:hover:not(.active) {
+  background-color: var(--red);
+}
+
+/* ====== End Top Navigation Bar ======*/
 
 /* ====== Start features Section ======*/
 
@@ -477,6 +515,39 @@ body {
 }
 
 /* ====== End Proudct Imformation  Section ======*/
+
+/* ====== End Proudct Imformation  Section ======*/
+
+/* ====== Start Footer Section ======*/
+
+.footer {
+  background-color: var(--Grey4);
+  color: var(--white);
+}
+
+.footer .copyright,
+.footer .design {
+  padding: 20px;
+  text-align: center;
+}
+/* Imformation Section Media Queries */
+
+/* Small Screen Rules  */
+@media (max-width: 767px) {
+  .footer .copyright,
+  .footer .design {
+    width: 100%;
+    float: none;
+  }
+}
+
+@media (min-width: 768px) {
+  .footer .copyright,
+  .footer .design {
+    width: 50%;
+  }
+}
+/* ====== End Footer  Section ======*/
 
 /* ====== Start the General Media Queries(Add a Breakpoint) ======*/
 
