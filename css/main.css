@@ -317,13 +317,40 @@ body {
   margin: 0 0 20px;
 }
 
-.they-say .person-say:first-of-type {
-  width: 80%;
-  margin-left: 10%;
+/* Testimonials Media Queries */
+
+/* Mobile and tablet */
+
+@media (min-width: 768px) {
+  .they-say .person-say:first-of-type {
+    width: 100%;
+  }
+
+  .they-say .person-say:not(:first-of-type) {
+    width: 49%;
+  }
+
+  .they-say .person-say:last-of-type {
+    margin-left: 2%;
+  }
 }
 
-.they-say .person-say:not(:first-of-type) {
-  width: 50%;
+/* Medium Screen Rules */
+
+@media (min-width: 992px) {
+  .they-say .person-say:first-of-type {
+    width: 80%;
+    margin-left: 10%;
+  }
+
+  .they-say .person-say h3 {
+    margin: 0 0 10px;
+  }
+  .they-say .person-say p {
+    margin: 0;
+    line-height: 1.2;
+    border-radius: 10px;
+  }
 }
 
 /* ====== End Testimonials  Section ======*/
