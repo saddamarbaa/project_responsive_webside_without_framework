@@ -15,3 +15,11 @@ function showDiv(element, givenType) {
   document.getElementById(givenType).classList.toggle("active");
   document.getElementById(givenType).style.display = "block";
 }
+
+// function to show the hidden Navigation Bar
+
+function showNav() {
+  const showNav = document.getElementById("topnav");
+  // console.log(showNav);
+  showNav.classList.toggle("visible-xs");
+}

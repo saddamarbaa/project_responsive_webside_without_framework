@@ -82,6 +82,10 @@ body {
 /* Small Screen Rules  */
 
 @media (max-width: 767px) {
+  .header {
+    min-height: 550px;
+  }
+
   .header .overlay .plan {
     float: none;
     margin: 0 auto 20px;
@@ -95,6 +99,14 @@ body {
 /* ====== End Header ======*/
 
 /* ====== Start Top Navigation Bar ======*/
+
+.showNav {
+  text-align: center;
+  color: red;
+  font-size: 34px;
+  display: none;
+}
+
 nav {
   background-color: var(--grey);
 }
@@ -120,7 +132,6 @@ nav ul.topnav li.active {
 nav ul.topnav li a {
   display: block;
   color: #666;
-  text-align: center;
   text-decoration: none;
   color: #000;
   color: var(--greyE);
@@ -130,6 +141,43 @@ nav ul.topnav li a {
 nav ul.topnav a:hover:not(.active) {
   background-color: var(--red);
 }
+
+/* Navigation Bar Media Queries */
+
+/* Small Screen Rules  */
+
+@media (max-width: 768px) {
+  nav ul.topnav li {
+    display: block;
+    width: 100%;
+  }
+
+  .hidden-xm {
+    display: none !important;
+  }
+
+  .showNav {
+    display: block !important;
+  }
+  .visible-xs {
+    display: block !important;
+  }
+}
+
+/*  Mobile and tablet Rules */
+
+@media (min-width: 768px) {
+  .hidden-xm,
+  .showNav {
+    display: block !important;
+  }
+
+  .showNav {
+    display: none !important;
+  }
+}
+
+/* Medium Screen Rules */
 
 /* ====== End Top Navigation Bar ======*/
 
