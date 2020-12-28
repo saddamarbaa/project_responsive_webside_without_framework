@@ -1,6 +1,6 @@
 # project_responsive_webside_without_framework 
 
-This is a code repository for the project: create responsive web design without a framework from scratch, 
+This is a code repository for the project : create responsive web design without a framework from scratch, 
 in this project I created my own website and my own framework with vanilla HTML, and CSS from scratch .
 
 Click the link blow to see the [GitHub Pages]: ( https://saddamarbaa.github.io/project_responsive_webside_without_framework/)
