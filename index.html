@@ -6,13 +6,16 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <!-- title -->
   <title>Responsive Web Design</title>
+  <!-- Font Awesome library  -->
+  <!-- from (https://www.cdnpkg.com/font-awesome) -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css">
   <!-- normalize.css -->
   <link rel="stylesheet" href="css/normalize.css">
-  <!-- the main css file -->
-  <link rel="stylesheet" href="css/main.css">
   <!-- google fonts -->
   <link rel="preconnect" href="https://fonts.gstatic.com">
   <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+  <!-- the main css file -->
+  <link rel="stylesheet" href="css/main.css">
 </head>
 <body>
   <!-- Start Header -->
@@ -38,7 +41,11 @@
 
   <!-- Start Top Navigation Bar -->
   <nav>
-    <div class="showNav hidden-xm" onclick="showNav()">X</div>
+    <div class="showNav hidden-xm" onclick="showNav()">
+      <div class="container">
+        <div class="menu-btn"><i class="fas fa-bars"></i></div>
+      </div>
+    </div>
     <div class="container">
       <ul class="topnav hidden-xm" id="topnav">
         <li class="active name float-left"><a href="#home" class="active">Saddam.IE</a></li>
@@ -319,7 +326,6 @@
   </div>
 
   <!-- End Footer -->
-
 
   <!-- main js file -->
   <script src="js/custom.js"></script>
