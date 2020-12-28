@@ -40,9 +40,11 @@ body {
 /* ====== Start Header ======*/
 
 .header {
-  background: url("/images/pexels-photo-5926400.webp") no-repeat top
-    center/cover;
   min-height: 500px;
+  position: relative;
+  background: url("../images/pexels-photo-5926400.webp") no-repeat top
+    center/cover;
+  background: url("../images/header1.jpg") no-repeat top center/cover;
   position: relative;
 }
 
@@ -101,10 +103,10 @@ body {
 /* ====== Start Top Navigation Bar ======*/
 
 .showNav {
-  text-align: center;
   color: red;
   font-size: 34px;
   display: none;
+  cursor: pointer;
 }
 
 nav {
